@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 04:11:27 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/03 04:18:01 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int		ft_isuppercase(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
 void	ft_putchar(char c);
 int		ft_strlen(char *str);
 int		ft_toupper(int c);
