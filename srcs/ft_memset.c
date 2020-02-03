@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 05:26:13 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 05:33:18 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/03 18:50:15 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void		*ft_memset(void *b, int c, size_t len)
 	conv = (unsigned char)c;
 	while (i < len) 
 	{
-		*str[i] = conv;
+		str[i] = conv;
 		i++;
 	}
 	return (b);

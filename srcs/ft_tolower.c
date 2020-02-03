@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:47:41 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 03:56:50 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/03 18:50:04 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int		ft_tolower(int c)
 {
 	if (ft_islowercase(c))
 	{
-		return (c - 32);
+		return (c + 32);
 	}
 	else
 	{
