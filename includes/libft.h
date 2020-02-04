@@ -6,13 +6,14 @@
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 05:34:06 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/03 19:34:38 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <stdlib.h>
 
 typedef struct		s_list
 {
@@ -39,6 +40,5 @@ int		ft_atoi(const char *str);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
-void	*ft_memset(void *b, int c, size_t len);
 
 #endif
