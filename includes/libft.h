@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/04 16:41:56 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/04 21:33:38 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ typedef struct		s_list
 	size_t			content_size;
 	struct	s_list 	*next;
 }					t_list;
-// 21
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -33,6 +32,8 @@ int		ft_islowercase(int c);
 int		ft_isprint(int c);
 int		ft_isuppercase(int c);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memmove(void *dst, const void *src, size_t len);
@@ -40,6 +41,8 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putchar(char c);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putendl(char const *s);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbr(int n);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putstr(char const *s);
 int		ft_strlen(char *str);

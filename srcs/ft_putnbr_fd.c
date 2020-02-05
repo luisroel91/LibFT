@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 16:43:05 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/04 16:50:06 by luiroel          ###   ########.fr       */
+/*   Created: 2020/02/04 21:30:03 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/04 21:32:41 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void		*ft_memchr(const void *s, int c, size_t n)
+void		ft_putnbr_fd(int n, int fd)
 {
-	char	*scpy;
-	char	conv;
-	int		i;
+	unsigned int number;
 
-	scpy = (unsigned char *)s;
-	conv = (unsigned char)c;
-	i = 0;
-	while (i < n)
+	if (n < 0)
 	{
-		if (scpy[i] == conv)
-		{
-			return ((void *)scpy[i]);
-		}
-		i++;
+		ft_putchar_fd('-', fd);
+		number = (unsigned int)(n * -1);
 	}
-	return (NULL);
+	else
+	{
+		number = (unsigned int)(n);
+	}
+	if (number >= 10)
+	{
+		ft_putnbr_fd(number / 10, fd);
+	}
+	ft_putchar_fd((char)(number % 10 + 48), fd);
 }

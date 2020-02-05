@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 16:43:05 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/04 16:50:06 by luiroel          ###   ########.fr       */
+/*   Created: 2020/02/04 16:52:08 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/04 19:32:06 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void		*ft_memchr(const void *s, int c, size_t n)
+int			ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*scpy;
-	char	conv;
-	int		i;
+	unsigned char	*s1cpy;
+	unsigned char	*s2cpy;
 
-	scpy = (unsigned char *)s;
-	conv = (unsigned char)c;
-	i = 0;
-	while (i < n)
+	s1cpy = (char *)s1;
+	s2cpy = (char *)s2;
+	while (n)
 	{
-		if (scpy[i] == conv)
+		if (*s1cpy++ != *s2cpy++)
 		{
-			return ((void *)scpy[i]);
+			return (*s1cpy - *s2cpy);
 		}
-		i++;
+		n--;
 	}
-	return (NULL);
+	return (0);
 }
