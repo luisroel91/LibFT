@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/03 19:35:52 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/05 14:49:50 by luiroel          ###   ########.fr       */
+/*   Created: 2020/02/05 15:17:45 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/05 15:37:00 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
-
 /*
-** Not casting here because, well, wtf do we do if we
-** get an array of ints or something else? 🤷‍♂️
+** Create pointer to end of s1 (s1 + len(s1))
+** then increase the pointer and make the value of
+** each address equal to the source str
+** set the value of our last address equal to
+** a null term. Return s1
 */
 
-void		*ft_memcpy(void *dst, const void *src, size_t n)
-{
-	char	*dcpy;
-	char	*scpy;
-	int		i;
+#include "../includes/libft.h"
 
-	i = 0;
-	dcpy = dst;
-	scpy = src;
-	while (i < n)
+char	*ft_strcat(char *s1, const char *s2)
+{
+	char	*str;
+
+	str = s1 + ft_strlen(s1);
+	while (*s2 != '\0')
 	{
-		dcpy[i] = scpy[i];
-		i++;
+		*str++ = *s2++;
 	}
-	return (dst);
+	*str = '\0';
+	return (s1);
 }
