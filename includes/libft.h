@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/05 13:58:50 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/05 14:14:08 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ void	ft_putnbr(int n);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putstr(char const *s);
 void	ft_strdel(char **as);
+void	ft_striter(char *s, void (*f)(char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 int		ft_strlen(char *str);
 char	*ft_strnew(size_t size);
 int		ft_toupper(int c);
