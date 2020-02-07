@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 14:30:24 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/07 14:33:59 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/07 17:25:40 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
+	if (!alst || !*alst)
+	{
+		return ;
+	}
 	del((*alst)->content, (*alst)->content_size);
 	free(*alst);
 	*alst = NULL;
