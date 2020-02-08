@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/07 20:08:51 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/08 17:59:49 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void	ft_strdel(char **as);
 char	*ft_strdup(char const *s1);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_strlen(char *str);
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
