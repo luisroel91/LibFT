@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/09 01:49:18 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/09 21:50:33 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putstr(char const *s);
 char	*ft_strcat(char *s1, const char *s2);
 void	ft_strclr(char *s);
+int		ft_strcmp(const char *s1, const char *s2);
 char	ft_strcpy(char *dst, const char *src);
 void	ft_strdel(char **as);
 char	*ft_strdup(char const *s1);
