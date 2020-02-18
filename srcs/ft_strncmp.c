@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 21:51:07 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/09 22:48:33 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/18 09:33:59 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -16,7 +18,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		if (*s1 == '\0' || *s2 == '\0')
 		{
-			break;
+			break ;
 		}
 		s1++;
 		s2++;

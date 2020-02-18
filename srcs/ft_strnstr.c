@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 01:30:09 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/09 01:41:27 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/18 09:32:37 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,7 @@ char	ft_strnstr(const char *haystack, const char *needle, size_t len)
 			nptr++;
 		}
 		if (*nptr == '\0')
-		{
 			return ((char *)haystack);
-		}
 		haystack++;
 	}
 	return (NULL);

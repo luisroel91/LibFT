@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 11:52:19 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/04 16:42:23 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/18 08:40:39 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void		*ft_memmove(void *dst, const void *src, size_t len)
 	while (i < len)
 	{
 		*(dcpy + i) = *(temp + i);
-		i++
+		i++;
 	}
 	free(temp);
 	return (dst);

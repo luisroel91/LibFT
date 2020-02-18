@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 04:18:57 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/07 17:25:40 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/18 09:29:00 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,7 @@ int		ft_atoi(const char *str)
 		if (str[i] == '-' || str[i] == '+')
 		{
 			if (str[i] == '-')
-			{
 				sign = -1;
-			}
 			i++;
 		}
 		if (ft_isdigit(str[i]))
@@ -36,10 +34,7 @@ int		ft_atoi(const char *str)
 			result = result * 10 + (str[i] - '0');
 			i++;
 		}
-		else
-		{
-			i++;
-		}	
+		i++;
 	}
 	return (result * sign);
 }
