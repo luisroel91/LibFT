@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 14:30:09 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/07 14:30:14 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/18 09:31:37 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
 ** content_size. After all that, set new_list->next to null
 ** Return the list
 */
-
 
 #include "../includes/libft.h"
 
