@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 04:29:50 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/05 14:02:18 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** until we've zeroed out the entire *s indirectly
 */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 void		ft_bzero(void *s, size_t n)
 {

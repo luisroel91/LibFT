@@ -6,11 +6,11 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 21:51:07 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/18 09:33:59 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

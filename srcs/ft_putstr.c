@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 05:14:29 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 05:15:50 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../includes/ft_libft.h"
 
 void		ft_putstr(char const *s)
 {

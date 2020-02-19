@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 21:25:01 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/04 21:29:41 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:40:10 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 void		ft_putnbr(int n)
 {

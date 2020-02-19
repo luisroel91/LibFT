@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 14:30:09 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/18 09:31:37 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 ** Return the list
 */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

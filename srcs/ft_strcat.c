@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 15:17:45 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/05 22:30:46 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** a null term. Return s1
 */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 char	*ft_strcat(char *s1, const char *s2)
 {

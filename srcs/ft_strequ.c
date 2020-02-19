@@ -1,4 +1,16 @@
-#include "../includes/libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/18 15:09:42 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../includes/ft_libft.h"
 
 int	ft_strequ(char const *s1, chat const *s2)
 {
@@ -10,5 +22,5 @@ int	ft_strequ(char const *s1, chat const *s2)
 	{
 		return (0);
 	}
-	
+
 }

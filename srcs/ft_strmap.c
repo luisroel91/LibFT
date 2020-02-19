@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 14:16:26 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/18 09:32:05 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 ** str, null term string and then return our new str
 */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {

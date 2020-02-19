@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 14:05:47 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/05 14:09:37 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:45:47 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** then increase the counter until the string ends
 */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {

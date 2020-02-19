@@ -1,33 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/05 14:10:49 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
+/*   Created: 2020/02/18 15:13:09 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/18 15:13:15 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Same thing as striter except we're also passing
-** the index to the function this time
-*/
-
-#include "../includes/ft_libft.h"
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+int		ft_iswhitespace(char c)
 {
-	int	i;
-
-	i = 0;
-	if (s != NULL && f != NULL)
+	if (c == ' ' || c == '\n' || c == '\t')
 	{
-		while (s[i] != '\0')
-		{
-			f(i, s[i]);
-			i++;
-		}
+		return (0);
+	}
+	else
+	{
+		return (1);
 	}
 }

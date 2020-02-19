@@ -6,15 +6,16 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/18 09:59:53 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:36:23 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _LIBFT_H
-# define _LIBFT_H
+#ifndef FT_LIBFT_H
+# define FT_LIBFT_H
 
 # include <string.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef struct		s_list
 {
@@ -32,6 +33,7 @@ int					ft_isdigit(int c);
 int					ft_islowercase(int c);
 int					ft_isprint(int c);
 int					ft_isuppercase(int c);
+int					ft_iswhitespace(char c);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
@@ -60,11 +62,13 @@ int					ft_strcmp(const char *s1, const char *s2);
 char				ft_strcpy(char *dst, const char *src);
 void				ft_strdel(char **as);
 char				*ft_strdup(char const *s1);
+int					ft_strequ(char const *s1, chat const *s2)
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strstr(const char *haystack, const char *needle);
+int					ft_strnequ(const char *s1, const char *s2, size_t n);
 int					ft_strlen(char *str);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -75,4 +79,4 @@ char				*ft_strrchr(const char *s, int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 
-#endif _LIBFT_H
+#endif

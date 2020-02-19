@@ -1,4 +1,16 @@
-#include "../includes/libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/19 11:43:25 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/19 11:46:37 by luiroel          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../includes/ft_libft.h"
 
 int		ft_iswhitespace(char c)
 {
@@ -22,13 +34,9 @@ char	*ft_strtrim(const char *s)
 	i = 0;
 	len = ft_strlen(s);
 	if (ft_iswhitespace(s[0]) != 0 && ft_iswhitespace(s[len]) != 0)
-	{
 		return (s);
-	}
 	if (ft_iswhitespace(s[len]))
-	{
 		len -= 1;
-	}
 	if (ft_iswhitespace(s[0]) == 0)
 	{
 		start = 1;

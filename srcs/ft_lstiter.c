@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 17:34:51 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/07 20:09:41 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** lst = lst->next
 */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {

@@ -6,11 +6,11 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:47:41 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/18 09:35:56 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:47:05 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 int		ft_tolower(int c)
 {

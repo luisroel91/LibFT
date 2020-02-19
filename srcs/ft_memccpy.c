@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 11:23:00 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/04 11:49:20 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:34:51 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** returned
 */
 
-#include "../includes/libft.h"
+#include "../includes/ft_libft.h"
 
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
