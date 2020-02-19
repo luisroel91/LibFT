@@ -6,23 +6,11 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 11:43:25 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:46:37 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:52:39 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_libft.h"
-
-int		ft_iswhitespace(char c)
-{
-	if (c == ' ' || c == '\n' || c == '\t')
-	{
-		return (0);
-	}
-	else
-	{
-		return (1);
-	}
-}
 
 char	*ft_strtrim(const char *s)
 {

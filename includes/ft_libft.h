@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:35:28 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:36:23 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 11:56:19 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,10 @@ char				*ft_strncpy(char *dst, const char *src, size_t len);
 char				*ft_strnew(size_t size);
 char				ft_strnstr(const char *big, const char *little, size_t len);
 char				*ft_strrchr(const char *s, int c);
-int					ft_toupper(int c);
+char				*ft_strstr(const char *haystack, const char *needle);
+char				*ft_strsub(char const *s, unsigned int start, size_t len);
+char				*ft_strtrim(const char *s)
 int					ft_tolower(int c);
+int					ft_toupper(int c);
 
 #endif
