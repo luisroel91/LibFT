@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 13:37:00 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** and then return it
 */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 char		*ft_strnew(size_t size)
 {

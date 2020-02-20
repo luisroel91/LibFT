@@ -6,11 +6,11 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 11:43:25 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 21:17:38 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strtrim(const char *s)
 {

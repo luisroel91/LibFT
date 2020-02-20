@@ -6,11 +6,11 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 05:20:30 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:38:49 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 void	ft_putendl_fd(char const *s, int fd)
 {

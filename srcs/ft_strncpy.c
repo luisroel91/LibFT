@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 15:06:56 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 20:42:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** string even after we've ran out of data
 */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {

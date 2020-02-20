@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 04:29:50 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** until we've zeroed out the entire *s indirectly
 */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 void		ft_bzero(void *s, size_t n)
 {

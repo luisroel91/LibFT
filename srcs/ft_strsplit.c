@@ -6,11 +6,11 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 11:59:09 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 20:49:29 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 char			**ft_strsplit(char const *s, char c)
 {

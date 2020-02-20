@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 17:00:56 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:32:25 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 ** alst to NULL
 */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {

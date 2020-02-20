@@ -6,11 +6,11 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:09:42 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 20:31:14 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:21:07 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 int	ft_strequ(char const *s1, char const *s2)
 {
@@ -22,5 +22,4 @@ int	ft_strequ(char const *s1, char const *s2)
 	{
 		return (0);
 	}
-
 }

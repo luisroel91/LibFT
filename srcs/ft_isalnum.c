@@ -6,13 +6,13 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 04:11:15 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:36:55 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:23:56 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
-int		isalnum(int c)
+int		ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
 	{

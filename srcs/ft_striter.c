@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 14:05:47 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 20:34:15 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** then increase the counter until the string ends
 */
 
-#include "../includes/ft_libft.h"
+#include "../includes/libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {
