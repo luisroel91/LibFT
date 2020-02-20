@@ -1,39 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 11:52:19 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 20:21:56 by luiroel          ###   ########.fr       */
+/*   Created: 2020/02/19 11:59:09 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/19 20:49:29 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_libft.h"
 
-void		*ft_memmove(void *dst, const void *src, size_t len)
+char			**ft_strsplit(char const *s, char c)
 {
-	char	*dcpy;
-	char	*scpy;
-	char	*temp;
-	size_t	i;
+	int		number;
+	char	**str;
+	int		i;
+	int		j;
+	int		start;
 
+	if ((s == 0) || (c == 0))
+		return (NULL);
+	number = ft_countwords(s, c);
+	str = malloc((sizeof(char *) * (number + 1)));
 	i = 0;
-	dcpy = (char *)dst;
-	scpy = (char *)src;
-	temp = (char *)malloc(len * sizeof(char));
-	while (i < len)
+	j = -1;
+	while (++j < number)
 	{
-		*(temp + i) = *(scpy + i);
+		while (s[i] && s[i] == c)
+			i++;
+		start = i;
+		while (s[i] && s[i] != c)
+			i++;
+		str[j] = ft_strsub(s, start, i - start);
 		i++;
 	}
-	i = 0;
-	while (i < len)
-	{
-		*(dcpy + i) = *(temp + i);
-		i++;
-	}
-	free(temp);
-	return (dst);
+	str[j] = NULL;
+	return (str);
 }

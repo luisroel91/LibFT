@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 01:30:09 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 21:04:15 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	ft_strnstr(const char *haystack, const char *needle, size_t len)
 	int		i;
 
 	i = 0;
-	needlen = ft_strnlen(needle, len);
+	needlen = ft_strlen((char *)needle);
 	if (*needle == '\0')
 	{
-		return ((char *)haystack);
+		return ((char)haystack);
 	}
 	while (*haystack)
 	{
@@ -35,8 +35,8 @@ char	ft_strnstr(const char *haystack, const char *needle, size_t len)
 			nptr++;
 		}
 		if (*nptr == '\0')
-			return ((char *)haystack);
+			return ((char)haystack);
 		haystack++;
 	}
-	return (NULL);
+	return (0);
 }

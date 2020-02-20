@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:55:07 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:47:17 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 20:39:19 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	char	*newstr;
 
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
+	len1 = ft_strlen((char *)s1);
+	len2 = ft_strlen((char *)s2);
+	i = 0;
 	newstr = (char *)malloc(sizeof(char) * (len1 + len2) + 1);
 	if (!newstr)
 	{

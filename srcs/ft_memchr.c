@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 16:43:05 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 11:34:56 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 21:21:33 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 void		*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*scpy;
-	char	conv;
-	int		i;
+	char			*scpy;
+	char			conv;
+	size_t			i;
 
-	scpy = (unsigned char *)s;
+	scpy = (char *)s;
 	conv = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
 		if (scpy[i] == conv)
 		{
-			return ((void *)scpy[i]);
+			return ((void *)&scpy[i]);
 		}
 		i++;
 	}

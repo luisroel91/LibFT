@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_countwords.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 11:52:19 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 20:21:56 by luiroel          ###   ########.fr       */
+/*   Created: 2020/02/19 14:16:39 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/19 17:06:05 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_libft.h"
-
-void		*ft_memmove(void *dst, const void *src, size_t len)
+int		ft_countwords(const char *s, char c)
 {
-	char	*dcpy;
-	char	*scpy;
-	char	*temp;
-	size_t	i;
+	int	count;
+	int	temp;
 
-	i = 0;
-	dcpy = (char *)dst;
-	scpy = (char *)src;
-	temp = (char *)malloc(len * sizeof(char));
-	while (i < len)
+	count = 0;
+	temp = 0;
+	while (*s)
 	{
-		*(temp + i) = *(scpy + i);
-		i++;
+		if (temp == 1 && *s == c)
+		{
+			temp = 0;
+		}
+		if (temp == 0 && *s != c)
+		{
+			temp = 1;
+			count++;
+		}
+		s++;
 	}
-	i = 0;
-	while (i < len)
-	{
-		*(dcpy + i) = *(temp + i);
-		i++;
-	}
-	free(temp);
-	return (dst);
+	return (count);
 }
