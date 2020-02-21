@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:10:16 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/20 16:30:27 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,10 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char	*newstr;
-	int		i;
+	char	*result;
 
-	newstr = (char *)malloc(sizeof(char) * len + 1);
-	i = 0;
-	if (!newstr)
-	{
+	if (!s || !(result = ft_memalloc(len + 1)))
 		return (NULL);
-	}
-	while (len)
-	{
-		newstr[i] = s[start];
-		i++;
-		len--;
-	}
-	newstr[i] = '\0';
-	return (newstr);
+	result = ft_strncpy(result, (char*)s + start, len);
+	return (result);
 }

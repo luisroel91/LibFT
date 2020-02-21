@@ -6,18 +6,18 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:13:09 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/18 15:13:15 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/20 15:42:55 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_iswhitespace(char c)
 {
-	if (c == ' ' || c == '\n' || c == '\t')
+	if ((c >= 8 && c <= 13) || c == 32)
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }

@@ -6,30 +6,29 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 21:51:07 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/20 16:27:48 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** While both are not null and both are equal and
+** n is greater than 0
+*/
 
 #include "../includes/libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (*s1 == *s2 && n)
-	{
-		if (*s1 == '\0' || *s2 == '\0')
-		{
-			break ;
-		}
-		s1++;
-		s2++;
-		n--;
-	}
-	if (*s1 == '\0' && *s2 == '\0')
+	size_t	i;
+
+	if (n == 0)
 	{
 		return (0);
 	}
-	else
+	i = 0;
+	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1)
 	{
-		return (-1);
+		++i;
 	}
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

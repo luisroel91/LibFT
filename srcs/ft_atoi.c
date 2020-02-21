@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 04:18:57 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/20 15:46:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@ int		ft_atoi(const char *str)
 	i = 0;
 	result = 0;
 	sign = 1;
-	while (str[i] != '\0')
+	while (ft_iswhitespace(str[i]))
 	{
-		if (str[i] == '-' || str[i] == '+')
-		{
-			if (str[i] == '-')
-				sign = -1;
-			i++;
-		}
-		if (ft_isdigit(str[i]))
-		{
-			result = result * 10 + (str[i] - '0');
-			i++;
-		}
+		i++;
+	}
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			sign = -1;
+		i++;
+	}
+	while (ft_isdigit(str[i]))
+	{
+		result = result * 10 + (str[i] - '0');
 		i++;
 	}
 	return (result * sign);
