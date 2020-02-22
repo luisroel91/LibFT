@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 19:13:33 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/20 15:03:50 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/21 15:08:57 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
-	char	conv;
 
 	i = ft_strlen((char *)s) + 1;
-	conv = (char)c;
 	while (i--)
 	{
-		if (s[i] == conv)
+		if (s[i] == (char)c)
 		{
 			return ((char *)&s[i]);
 		}

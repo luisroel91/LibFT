@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 12:11:53 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/21 14:37:29 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ char	*ft_itoa(int n)
 {
 	char *str;
 
-	str = (char *)ft_memalloc(10);
+	if (!(str = (char *)ft_memalloc(10)))
+		return (0);
 	if (n >= 0 && str)
 	{
 		*--str = '0' + (n % 10);

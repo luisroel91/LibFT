@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 15:09:03 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 22:20:55 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/21 16:07:44 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 int	ft_strnequ(const char *s1, const char *s2, size_t n)
 {
-	return (ft_strncmp(s1, s2, n) == 0) ? 1 : 0;
+	if (s1 == NULL || s2 == NULL)
+	{
+		return (0);
+	}
+	else
+	{
+		return (ft_strncmp(s1, s2, n) == 0) ? 1 : 0;
+	}
 }
