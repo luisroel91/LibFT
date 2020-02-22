@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 11:52:19 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/21 14:53:34 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/22 10:35:50 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,26 +16,26 @@ void		*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*dcpy;
 	char	*scpy;
-	char	*temp;
 	size_t	i;
 
+	if (!dst && !src)
+		return (dst);
 	i = 0;
 	dcpy = (char *)dst;
 	scpy = (char *)src;
-	temp = (char *)malloc(len * sizeof(char));
-	if (!dst && !src)
-		return (dst);
-	while (i < len)
+	if (scpy < dcpy)
 	{
-		*(temp + i) = *(scpy + i);
-		i++;
+		while (++i <= len)
+		{
+			dcpy[len - i] = scpy[len - i];
+		}
 	}
-	i = 0;
-	while (i < len)
+	else
 	{
-		*(dcpy + i) = *(temp + i);
-		i++;
+		while (len-- > 0)
+		{
+			*(dcpy++) = *(scpy++);
+		}
 	}
-	free(temp);
 	return (dst);
 }
