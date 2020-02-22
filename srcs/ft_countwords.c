@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_countwords.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 16:52:08 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/21 10:59:48 by luiroel          ###   ########.fr       */
+/*   Created: 2020/02/19 14:16:39 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/19 17:06:05 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
-
-int			ft_memcmp(const void *s1, const void *s2, size_t n)
+int		ft_countwords(const char *s, char c)
 {
-	unsigned char	*s1cpy;
-	unsigned char	*s2cpy;
-	size_t			i;
+	int	count;
+	int	temp;
 
-	if (n == 0)
+	count = 0;
+	temp = 0;
+	while (*s)
 	{
-		return (0);
+		if (temp == 1 && *s == c)
+		{
+			temp = 0;
+		}
+		if (temp == 0 && *s != c)
+		{
+			temp = 1;
+			count++;
+		}
+		s++;
 	}
-	s1cpy = (unsigned char *)s1;
-	s2cpy = (unsigned char *)s2;
-	i = 0;
-	while (*s1cpy == *s2cpy && ++i < n)
-	{
-		s1cpy++;
-		s2cpy++;
-	}
-	return ((int)(*s1cpy - *s2cpy));
+	return (count);
 }

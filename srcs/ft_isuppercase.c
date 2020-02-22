@@ -3,21 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isuppercase.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:57:48 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 04:12:47 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/20 14:54:39 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isuppercase(int c)
 {
-	if (c >= 65 && c <= 90)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= 'A' && c <= 'Z') ? (1) : (0);
 }

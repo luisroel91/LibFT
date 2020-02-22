@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 15:06:56 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/18 09:29:46 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (src[i] != '\0' && i < len)

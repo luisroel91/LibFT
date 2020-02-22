@@ -1,46 +1,41 @@
-#include "../includes/libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/02/19 11:43:25 by luiroel           #+#    #+#             */
+/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int		ft_iswhitespace(char c)
-{
-	if (c == ' ' || c == '\n' || c == '\t')
-	{
-		return (0);
-	}
-	else
-	{
-		return (1);
-	}
-}
+#include "../includes/libft.h"
 
 char	*ft_strtrim(const char *s)
 {
-	int		len;
-	int		start;
-	int		i;
+	int		num[3];
 	char	*newstr;
 
-	i = 0;
-	len = ft_strlen(s);
-	if (ft_iswhitespace(s[0]) != 0 && ft_iswhitespace(s[len]) != 0)
-	{
-		return (s);
-	}
-	if (ft_iswhitespace(s[len]))
-	{
-		len -= 1;
-	}
+	num[2] = 0;
+	num[1] = 0;
+	num[0] = ft_strlen((char *)s);
+	if (ft_iswhitespace(s[0]) != 0 && ft_iswhitespace(s[num[0]]) != 0)
+		return ((char *)s);
+	if (ft_iswhitespace(s[num[0]]))
+		num[0] -= 1;
 	if (ft_iswhitespace(s[0]) == 0)
 	{
-		start = 1;
-		len -= 1;
+		num[1] = 1;
+		num[0] -= 1;
 	}
-	newstr = (char *)malloc(sizeof(char) * len + 1);
-	while (s[start] != '\0' && i < len)
+	newstr = (char *)malloc(sizeof(char) * num[0] + 1);
+	while (s[num[1]] != '\0' && num[2] < num[0])
 	{
-		newstr[i] = s[start];
-		i++;
-		start++;
+		newstr[num[2]] = s[num[1]];
+		num[2]++;
+		num[1]++;
 	}
-	newstr[i] = '\0';
+	newstr[num[2]] = '\0';
 	return (newstr);
 }

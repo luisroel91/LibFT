@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 04:00:12 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 04:01:47 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/20 15:19:40 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 int		ft_toupper(int c)
 {
-	if (ft_isuppercase(c))
-	{
-		return (c - 32);
-	}
-	else
-	{
-		return (c);
-	}
+	return (c >= 'a' && c <= 'z') ? (c - 32) : (c);
 }

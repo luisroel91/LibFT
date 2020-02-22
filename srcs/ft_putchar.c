@@ -3,16 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:40:13 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 03:44:47 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/21 16:34:56 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../includes/libft.h"
 
 void		ft_putchar(char c)
 {
-	write(1, &c, 1);
+	//size_t	len;
+	//size_t	count;
+	//char	utf8buf[4];
+
+	if (ft_isascii(c))
+	{
+		write(1, &c, 1);
+	}
+
+	//else
+	//{
+	//	if (c < 0 || c > 0x10ffff)
+	//	{
+	//		return (EOF);
+	//	}
+	//}
 }

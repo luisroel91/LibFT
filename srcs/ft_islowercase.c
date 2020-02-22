@@ -3,21 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_islowercase.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:52:29 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 03:53:45 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/20 15:20:16 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_islowercase(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= 'a' && c <= 'z') ? (1) : (0);
 }

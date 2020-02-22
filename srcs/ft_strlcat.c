@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 15:14:51 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/08 17:48:07 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/21 15:39:40 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	len;
 
 	len = 0;
-	srclen = ft_strlen(src);
+	srclen = ft_strlen((char *)src);
 	while (*dst && size > 0)
 	{
 		dst++;

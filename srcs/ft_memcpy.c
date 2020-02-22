@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 19:35:52 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/05 14:49:50 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/21 14:31:19 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,15 @@ void		*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char	*dcpy;
 	char	*scpy;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	dcpy = dst;
-	scpy = src;
+	scpy = (char *)src;
+	if (!dst && !src )
+	{
+		return (dst);
+	}
 	while (i < n)
 	{
 		dcpy[i] = scpy[i];

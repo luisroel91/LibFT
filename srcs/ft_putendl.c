@@ -3,20 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiroel <luiroel@studen.42.us.org>         +#+  +:+       +#+        */
+/*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 05:17:32 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/03 05:19:32 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/21 16:32:27 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../includes/libft.h"
 
 void		ft_putendl(char const *s)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+	{
+		return ;
+	}
 	while (s[i] != '\0')
 	{
 		write(1, &s[i], 1);
