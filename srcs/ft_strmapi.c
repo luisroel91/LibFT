@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 14:26:42 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/22 15:53:01 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	{
 		return (NULL);
 	}
-	str = (char *)malloc(sizeof(char) * ft_strlen((char *)s) + 1);
-	if (!str)
+	if (!(str = (char *)malloc(sizeof(char) * ft_strlen((char *)s) + 1)))
 	{
 		return (NULL);
 	}
