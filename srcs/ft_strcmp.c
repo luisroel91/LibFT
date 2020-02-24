@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 21:45:33 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/22 16:15:11 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/23 13:40:55 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,14 @@ int		ft_strcmp(const char *s1, const char *s2)
 	{
 		return (0);
 	}
-	while (*s1 == *s2)
+	while (*s1)
 	{
-		if ((unsigned char)*s1 == '\0' || (unsigned char)*s2 == '\0')
+		if (*s1 != *s2)
 		{
 			break ;
 		}
 		s1++;
 		s2++;
 	}
-	if (*s1 == '\0' && *s2 == '\0')
-	{
-		return (0);
-	}
-	else
-	{
-		return (-1);
-	}
+	return (*(const unsigned char *)s1 - *(const unsigned char *)s2);
 }

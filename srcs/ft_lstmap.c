@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 17:45:21 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/19 22:15:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/23 13:53:12 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,22 +30,18 @@
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list	*start;
-	t_list	*temp;
+	t_list	*head;
+	t_list	*iter;
 
-	if (!lst)
-	{
+	if (!lst || !(iter = ft_lstnew(NULL, 0)))
 		return (NULL);
-	}
-	else
+	iter = f(lst);
+	head = iter;
+	while (lst->next)
 	{
-		start = f(ft_lstnew(lst->content, lst->content_size));
-		temp = start;
-		while ((lst = lst->next))
-		{
-			temp->next = f(ft_lstnew(lst->content, lst->content_size));
-			temp = temp->next;
-		}
-		return (start);
+		lst = lst->next;
+		iter->next = f(lst);
+		iter = iter->next;
 	}
+	return (head);
 }
