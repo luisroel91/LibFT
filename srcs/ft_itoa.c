@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 12:11:53 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/24 18:32:01 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/25 12:24:37 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_itoa(int n)
 	number = (number > 0) ? number : -number;
 	while (n)
 		n = len++ ? n / 10 : n / 10;
-	str = (char *)malloc(sizeof(str) * len + 1);
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
 	*(str + len--) = '\0';
