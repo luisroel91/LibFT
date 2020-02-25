@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 19:35:52 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/21 14:31:19 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/24 14:29:40 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void		*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	dcpy = dst;
 	scpy = (char *)src;
-	if (!dst && !src )
+	if (!dst && !src)
 	{
 		return (dst);
 	}

@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 12:11:53 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/22 15:58:42 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/24 18:32:01 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,30 +21,27 @@
 
 char	*ft_itoa(int n)
 {
-	char *str;
+	long	number;
+	size_t	len;
+	char	*str;
 
-	if (!(str = (char *)ft_memalloc(10)))
-		return (0);
-	if (n >= 0 && str)
+	number = n;
+	len = (number > 0) ? 0 : 1;
+	number = (number > 0) ? number : -number;
+	while (n)
+		n = len++ ? n / 10 : n / 10;
+	str = (char *)malloc(sizeof(str) * len + 1);
+	if (!str)
+		return (NULL);
+	*(str + len--) = '\0';
+	while (number > 0)
 	{
-		*--str = '0' + (n % 10);
-		n = n / 10;
-		while (n != 0)
-		{
-			*--str = '0' + (n % 10);
-			n = n / 10;
-		}
+		*(str + len--) = number % 10 + '0';
+		number /= 10;
 	}
-	else if (str)
-	{
-		*--str = '0' - (n % 10);
-		n = n / 10;
-		while (n != 0)
-		{
-			*--str = '0' - (n % 10);
-			n = n / 10;
-		}
-		*--str = '-';
-	}
-	return (ft_strdup(str));
+	if (len == 0 && str[1] == '\0')
+		*(str + len) = '0';
+	if (len == 0 && str[1] != '\0')
+		*(str + len) = '-';
+	return (str);
 }

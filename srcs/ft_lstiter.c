@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 17:34:51 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/21 16:54:22 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/24 20:30:15 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,16 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
+	t_list *list;
+
+	list = lst;
 	if (!lst)
 	{
 		return ;
 	}
-	if (lst->next)
+	while (list)
 	{
-		ft_lstiter(lst->next, f);
+		f(list);
+		list = list->next;
 	}
-	f(lst);
 }

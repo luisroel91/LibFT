@@ -6,13 +6,15 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 03:45:22 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/21 14:12:24 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/24 20:50:51 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(const char *str)
+#include "../includes/libft.h"
+
+size_t		ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')

@@ -6,7 +6,7 @@
 #    By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/19 16:37:15 by luiroel           #+#    #+#              #
-#    Updated: 2020/02/20 16:42:14 by luiroel          ###   ########.fr        #
+#    Updated: 2020/02/24 19:15:49 by luiroel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,9 +21,9 @@ FLAGS = -g -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(SRCS)
-		gcc $(FLAGS) -I$(INCLUDES) -c $(SRCS)
-		ar rc $(NAME) $(OBJ_NAMES)
-		ranlib $(NAME)
+		@gcc $(FLAGS) -I$(INCLUDES) -c $(SRCS)
+		@ar rc $(NAME) $(OBJ_NAMES)
+		@ranlib $(NAME)
 
 clean:
 		@/bin/rm -f $(OBJ_NAMES)
