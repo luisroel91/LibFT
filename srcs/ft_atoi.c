@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/03 04:18:57 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/21 15:56:46 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/22 11:53:50 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int		ft_atoi(const char *str)
 {
-	int			i;
-	int			sign;
+	int	i;
+	int	sign;
 	int result;
 
 	i = 0;
