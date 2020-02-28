@@ -6,7 +6,7 @@
 /*   By: luiroel <luiroel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 11:43:25 by luiroel           #+#    #+#             */
-/*   Updated: 2020/02/26 21:17:43 by luiroel          ###   ########.fr       */
+/*   Updated: 2020/02/28 10:10:36 by luiroel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,5 @@ char	*ft_strtrim(const char *s)
 	}
 	sdup[i + 1] = 0;
 	sdup = ft_strdup(sdup);
-	free(start);
 	return (sdup);
 }
